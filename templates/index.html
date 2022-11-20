@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="content">
+        <div class="user__info">{{ user['firstname'] }} {{ user['lastname'] }}</div>
+        <a class="post__add" href="/post"><button>Добавить</button></a>
+        <h1>Список коментариев</h1>
+        {% for post in posts %}
+        <div class="post__box">
+            <a href="/post?post_id={{ post.id }}"><h2 class="post__title">{{ post.title }}</h2></a>
+            <p class="post__text">{{ post.text }}</p>
+            <p class="post__author">Автор: {{ post['user']['firstname'] }} {{ post['user']['lastname'] }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

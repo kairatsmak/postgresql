@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+}
+.content {
+    width: 1200px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.user__info {
+    align-self: flex-end;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: orange;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.post__add {
+    align-self: flex-end;
+    margin-right: 20px;
+}
+.post__add button {
+    width: 150px;
+    padding: 5px;
+    background-color: orange;
+    border-radius: 10px;
+    font-size: 14pt;
+    color: white;
+    cursor: pointer;
+}
+.post__add button:hover {
+    background-color: white;
+    color: orange;
+}
+.content h1 {
+    align-self: center;
+    color: orange;
+}
+.login__box {
+    align-self: center;
+    width: 400px;
+    border: 1px green solid;
+    border-radius: 10px;
+    color: white;
+    background-color: orange;
+    margin-top: 100px
+}
+.login__box form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login__box form h1 {
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.row {
+    padding: 5px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;    
+}
+.field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.field input, .field textarea {
+    padding: 5px;
+    width: 100%;
+    font-size: 14pt;
+}
+.field input[type="submit"], .field button {
+    align-self: flex-end;
+    padding: 5px;
+    width: 150px;
+    font-size: 14pt;
+}
+.error {
+    text-align: center;
+    width: 100%;
+    font-size: 12pt;
+    color: red;
+}
+.post__box {
+    background-color: orange;
+    border: 2px salmon solid;
+    margin: 15px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+}
+.post__box h1, .post__box h2 {
+    color: white;
+    align-self: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.post__box p {
+    background-color: white;
+    color: brown;
+    margin: 5px;
+}
+.button {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+.button input {
+    align-self: center;
+    width: 150px;
+    color: white;
+    background-color: orange;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 5px;
+}

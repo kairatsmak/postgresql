@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login User</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="content">
+        <div class="login__box">
+            <form action="/login" method="post">
+                <h1>Вход в систему</h1>
+                <div class="row">
+                    <div class="field">
+                        <input type="text" name="username" placeholder="Имя пользователя">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="field">
+                        <input type="password" name="password" placeholder="Пароль">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="field">
+                        <input type="submit" value="Войти">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="error">
+                        <p>{{ error_msg }}</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
